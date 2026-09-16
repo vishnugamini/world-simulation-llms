@@ -1,0 +1,117 @@
+{
+  "job": {
+    "id": "cfd8ec9002b64e1f",
+    "kind": "research",
+    "created": 1789542993.7892869,
+    "status": "complete",
+    "spec": {
+      "question": "Compare private and pool sharing in baseline only, exactly 1 seed per policy, duration 5 days. Use 2 total worlds. Interpret the results.",
+      "model": "qwen3:8b",
+      "rounds": 1,
+      "max_runs": 2,
+      "minutes": 3.0
+    },
+    "data": {
+      "rounds": [
+        {
+          "round": 1,
+          "hypothesis": "In a baseline environment, pool sharing will result in higher survival rates and food security compared to private sharing due to collective resource management.",
+          "rationale": "This experiment compares private and pool sharing policies in a baseline condition to determine which strategy promotes better survival and food stability. By running two worlds with one seed each, we can isolate the impact of sharing policies on outcomes without external stressors like drought. The results will help us understand the effectiveness of cooperative versus individualistic food-sharing strategies.",
+          "experiment_id": "a252e0b1b5a74e6b",
+          "confirmation_of": null,
+          "interpretation": {
+            "text": "In this simulation, two groups of 40 inhabitants each were tested over 5 days under baseline conditions with a reserve of 3.0 food units. Both groups had a survival rate of 100% (survival = 1.0), and neither group experienced any hungry days (hungry_days = 0.0). Food spoilage was consistent across both groups, with an average of 42.22 food units spoiled per run. Recovery was not applicable in either group, as no inhabitants survived to require recovery. The results show no statistically significant differences between the 'pool' and 'private' policies in this specific simulation setup. The paired comparisons indicate no difference in survival, hungry days, or spoilage between the two groups. These findings are based on a single simulation run for each group, and caution is advised in interpreting these results as they are not based on multiple simulation seeds.",
+            "result_ids": [
+              "a252e0b1b5a74e6b"
+            ]
+          },
+          "groups": [
+            {
+              "label": "baseline / pool",
+              "condition": "baseline",
+              "policy": "pool",
+              "reserve": 3.0,
+              "n": 1,
+              "survival": 1.0,
+              "hungry_days": 0.0,
+              "spoiled": 42.2184902106149,
+              "recovered": 0,
+              "recovery_applicable": 0,
+              "recovery_days": null,
+              "replay": "2ccd500582e05677"
+            },
+            {
+              "label": "baseline / private",
+              "condition": "baseline",
+              "policy": "private",
+              "reserve": 3.0,
+              "n": 1,
+              "survival": 1.0,
+              "hungry_days": 0.0,
+              "spoiled": 42.2184902106149,
+              "recovered": 0,
+              "recovery_applicable": 0,
+              "recovery_days": null,
+              "replay": "c1840b388ec4514b"
+            }
+          ],
+          "paired": [
+            {
+              "a": "baseline / pool",
+              "b": "baseline / private",
+              "metric": "survival",
+              "n": 1,
+              "difference": 0.0,
+              "low": null,
+              "high": null
+            },
+            {
+              "a": "baseline / pool",
+              "b": "baseline / private",
+              "metric": "hungry_days",
+              "n": 1,
+              "difference": 0.0,
+              "low": null,
+              "high": null
+            },
+            {
+              "a": "baseline / pool",
+              "b": "baseline / private",
+              "metric": "spoiled",
+              "n": 1,
+              "difference": 0.0,
+              "low": null,
+              "high": null
+            }
+          ]
+        }
+      ],
+      "used_runs": 2,
+      "elapsed_seconds": 73.08078002929688,
+      "started_at": 1789542993.791946,
+      "deadline_at": 1789543173.791946,
+      "active_experiment": null,
+      "stop_reason": "Budget reached"
+    }
+  },
+  "saw_live_output": true,
+  "event_count": 215,
+  "kinds": [
+    "experiment.configured",
+    "experiment.finished",
+    "experiment.results",
+    "experiment.started",
+    "model.completed",
+    "model.connected",
+    "model.delta",
+    "model.request",
+    "round.completed",
+    "round.started",
+    "session.finished",
+    "session.queued",
+    "session.started",
+    "validation.accepted",
+    "world.finished",
+    "world.started"
+  ]
+}

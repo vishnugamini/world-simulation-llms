@@ -1,0 +1,49 @@
+{
+  "id": "18a37e7fe1f14dd0",
+  "kind": "experiment",
+  "created": 1789518947.54334,
+  "status": "complete",
+  "spec": {
+    "name": "Sharing & survival",
+    "base": {
+      "version": "1",
+      "seed": 42,
+      "population": 40,
+      "duration": 365,
+      "policy": "surplus",
+      "reserve": 3,
+      "ration": 1,
+      "initial_food": 4,
+      "daily_yield": 2.4,
+      "patch_regrowth": 13,
+      "spoilage": 0.035,
+      "starvation_days": 7,
+      "failure_chance": 0.2,
+      "drought_start": 90,
+      "drought_length": 20,
+      "drought_severity": 0.7,
+      "condition": "individual"
+    },
+    "policies": [
+      "private",
+      "pool",
+      "surplus"
+    ],
+    "conditions": [
+      "individual",
+      "drought"
+    ],
+    "reserves": [
+      3
+    ],
+    "seeds": 50,
+    "seed_start": 1000
+  },
+  "data": {
+    "total": 300,
+    "completed": 300,
+    "engine_version": "1.0.0",
+    "elapsed_seconds": 37.248121040989645,
+    "error": null
+  }
+}

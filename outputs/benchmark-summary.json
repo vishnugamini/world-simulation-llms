@@ -1,0 +1,302 @@
+{
+  "job": {
+    "id": "18a37e7fe1f14dd0",
+    "kind": "experiment",
+    "created": 1789518947.54334,
+    "status": "complete",
+    "spec": {
+      "name": "Sharing & survival",
+      "base": {
+        "version": "1",
+        "seed": 42,
+        "population": 40,
+        "duration": 365,
+        "policy": "surplus",
+        "reserve": 3,
+        "ration": 1,
+        "initial_food": 4,
+        "daily_yield": 2.4,
+        "patch_regrowth": 13,
+        "spoilage": 0.035,
+        "starvation_days": 7,
+        "failure_chance": 0.2,
+        "drought_start": 90,
+        "drought_length": 20,
+        "drought_severity": 0.7,
+        "condition": "individual"
+      },
+      "policies": [
+        "private",
+        "pool",
+        "surplus"
+      ],
+      "conditions": [
+        "individual",
+        "drought"
+      ],
+      "reserves": [
+        3
+      ],
+      "seeds": 50,
+      "seed_start": 1000
+    },
+    "data": {
+      "total": 300,
+      "completed": 300,
+      "engine_version": "1.0.0",
+      "elapsed_seconds": 37.248121040989645,
+      "error": null
+    }
+  },
+  "groups": [
+    {
+      "label": "drought / pool",
+      "condition": "drought",
+      "policy": "pool",
+      "reserve": 3.0,
+      "n": 50,
+      "survival": 1.0,
+      "hungry_days": 0.0,
+      "spoiled": 9082.923173459858,
+      "recovered": 50,
+      "recovery_applicable": 50,
+      "recovery_days": 0.0,
+      "replay": "72f55019f5875ad0"
+    },
+    {
+      "label": "drought / private",
+      "condition": "drought",
+      "policy": "private",
+      "reserve": 3.0,
+      "n": 50,
+      "survival": 0.7829999999999999,
+      "hungry_days": 81.3,
+      "spoiled": 8652.129632496431,
+      "recovered": 50,
+      "recovery_applicable": 50,
+      "recovery_days": 0.0,
+      "replay": "5c82e31fc3375ad8"
+    },
+    {
+      "label": "drought / surplus / reserve 3",
+      "condition": "drought",
+      "policy": "surplus",
+      "reserve": 3.0,
+      "n": 50,
+      "survival": 1.0,
+      "hungry_days": 0.44,
+      "spoiled": 9082.969261470787,
+      "recovered": 50,
+      "recovery_applicable": 50,
+      "recovery_days": 0.0,
+      "replay": "6cf0a2e2d2525466"
+    },
+    {
+      "label": "individual / pool",
+      "condition": "individual",
+      "policy": "pool",
+      "reserve": 3.0,
+      "n": 50,
+      "survival": 1.0,
+      "hungry_days": 0.0,
+      "spoiled": 5952.1592415239475,
+      "recovered": 0,
+      "recovery_applicable": 0,
+      "recovery_days": null,
+      "replay": "449ae62d9da4533b"
+    },
+    {
+      "label": "individual / private",
+      "condition": "individual",
+      "policy": "private",
+      "reserve": 3.0,
+      "n": 50,
+      "survival": 0.9990000000000001,
+      "hungry_days": 212.58,
+      "spoiled": 6064.388922853902,
+      "recovered": 0,
+      "recovery_applicable": 0,
+      "recovery_days": null,
+      "replay": "23e123ce733b5b12"
+    },
+    {
+      "label": "individual / surplus / reserve 3",
+      "condition": "individual",
+      "policy": "surplus",
+      "reserve": 3.0,
+      "n": 50,
+      "survival": 1.0,
+      "hungry_days": 0.0,
+      "spoiled": 5952.15924152395,
+      "recovered": 0,
+      "recovery_applicable": 0,
+      "recovery_days": null,
+      "replay": "f0a4671423485a52"
+    }
+  ],
+  "paired": [
+    {
+      "a": "drought / pool",
+      "b": "drought / private",
+      "metric": "survival",
+      "n": 50,
+      "difference": -0.21699999999999997,
+      "low": -0.2360125,
+      "high": -0.1985
+    },
+    {
+      "a": "drought / pool",
+      "b": "drought / private",
+      "metric": "hungry_days",
+      "n": 50,
+      "difference": 81.3,
+      "low": 76.9795,
+      "high": 86.1005
+    },
+    {
+      "a": "drought / pool",
+      "b": "drought / private",
+      "metric": "spoiled",
+      "n": 50,
+      "difference": -430.79354096342695,
+      "low": -476.29252489009565,
+      "high": -388.68607080343673
+    },
+    {
+      "a": "drought / pool",
+      "b": "drought / surplus / reserve 3",
+      "metric": "survival",
+      "n": 50,
+      "difference": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "a": "drought / pool",
+      "b": "drought / surplus / reserve 3",
+      "metric": "hungry_days",
+      "n": 50,
+      "difference": 0.44,
+      "low": 0.0,
+      "high": 1.32
+    },
+    {
+      "a": "drought / pool",
+      "b": "drought / surplus / reserve 3",
+      "metric": "spoiled",
+      "n": 50,
+      "difference": 0.04608801092925205,
+      "low": -4.9672053137328476e-12,
+      "high": 0.18435204370654082
+    },
+    {
+      "a": "drought / private",
+      "b": "drought / surplus / reserve 3",
+      "metric": "survival",
+      "n": 50,
+      "difference": 0.21699999999999997,
+      "low": 0.19700000000000004,
+      "high": 0.23550000000000001
+    },
+    {
+      "a": "drought / private",
+      "b": "drought / surplus / reserve 3",
+      "metric": "hungry_days",
+      "n": 50,
+      "difference": -80.86,
+      "low": -85.4805,
+      "high": -76.3185
+    },
+    {
+      "a": "drought / private",
+      "b": "drought / surplus / reserve 3",
+      "metric": "spoiled",
+      "n": 50,
+      "difference": 430.8396289743562,
+      "low": 389.83760233984316,
+      "high": 480.2538506915839
+    },
+    {
+      "a": "individual / pool",
+      "b": "individual / private",
+      "metric": "survival",
+      "n": 50,
+      "difference": -0.0010000000000000009,
+      "low": -0.0025000000000000022,
+      "high": 0.0
+    },
+    {
+      "a": "individual / pool",
+      "b": "individual / private",
+      "metric": "hungry_days",
+      "n": 50,
+      "difference": 212.58,
+      "low": 191.95100000000002,
+      "high": 232.283
+    },
+    {
+      "a": "individual / pool",
+      "b": "individual / private",
+      "metric": "spoiled",
+      "n": 50,
+      "difference": 112.22968132995487,
+      "low": 101.19748878021986,
+      "high": 123.26768068794104
+    },
+    {
+      "a": "individual / pool",
+      "b": "individual / surplus / reserve 3",
+      "metric": "survival",
+      "n": 50,
+      "difference": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "a": "individual / pool",
+      "b": "individual / surplus / reserve 3",
+      "metric": "hungry_days",
+      "n": 50,
+      "difference": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "a": "individual / pool",
+      "b": "individual / surplus / reserve 3",
+      "metric": "spoiled",
+      "n": 50,
+      "difference": 1.0913936421275138e-12,
+      "low": -3.820787242148072e-12,
+      "high": 6.257778295548632e-12
+    },
+    {
+      "a": "individual / private",
+      "b": "individual / surplus / reserve 3",
+      "metric": "survival",
+      "n": 50,
+      "difference": 0.0010000000000000009,
+      "low": 0.0,
+      "high": 0.0025000000000000022
+    },
+    {
+      "a": "individual / private",
+      "b": "individual / surplus / reserve 3",
+      "metric": "hungry_days",
+      "n": 50,
+      "difference": -212.58,
+      "low": -233.2415,
+      "high": -192.05700000000002
+    },
+    {
+      "a": "individual / private",
+      "b": "individual / surplus / reserve 3",
+      "metric": "spoiled",
+      "n": 50,
+      "difference": -112.22968132995378,
+      "low": -122.37436834797897,
+      "high": -101.29715027585429
+    }
+  ],
+  "caveat": "Results describe this version of the simulated world. Paired intervals are descriptive, not adjusted for multiple comparisons. Recovery averages include recovered colonies only."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "bdd5c48cbc374e40",
+  "kind": "research",
+  "created": 1789540703.449739,
+  "status": "complete",
+  "spec": {
+    "question": "Run exactly one small test of private versus pool sharing under individual misfortune, with 2 matched seeds and 30 days per world. Keep all other defaults. Report what happened, without generalizing.",
+    "model": "qwen3:8b",
+    "rounds": 1,
+    "max_runs": 4,
+    "minutes": 3.0
+  },
+  "data": {
+    "rounds": [
+      {
+        "round": 1,
+        "hypothesis": "We hypothesize that under individual misfortune, pool sharing will result in better survival outcomes compared to private sharing.",
+        "rationale": "This experiment tests the impact of sharing policies (private vs. pool) under the condition of individual misfortune. By running two matched seeds with 30 days of simulation, we can directly compare the outcomes of these two policies under identical conditions, keeping all other parameters constant.",
+        "experiment_id": "0eeb6045e84b48b6",
+        "confirmation_of": null,
+        "interpretation": {
+          "text": "In this simulation, two groups of 40 inhabitants each were tested over 30 days under different food management policies. Both groups had a reserve of 3.0 food units and a survival rate of 1.0 (meaning all inhabitants survived). However, the policies differed: one group used a pooled system, while the other used a private system. The pooled system resulted in 0 hungry days, but 334.4 food units were spoiled on average. The private system led to 7 hungry days on average, with slightly more spoilage (335.5 units), but no recovery was observed in either group. The paired comparisons show no difference in survival, but the private policy group had significantly more hungry days and slightly more spoilage than the pooled group. Recovery was not applicable in either case.",
+          "result_ids": [
+            "0eeb6045e84b48b6"
+          ]
+        },
+        "groups": [
+          {
+            "label": "individual / pool",
+            "condition": "individual",
+            "policy": "pool",
+            "reserve": 3.0,
+            "n": 2,
+            "survival": 1.0,
+            "hungry_days": 0.0,
+            "spoiled": 334.39878343124576,
+            "recovered": 0,
+            "recovery_applicable": 0,
+            "recovery_days": null,
+            "replay": "b402fe73e494546d"
+          },
+          {
+            "label": "individual / private",
+            "condition": "individual",
+            "policy": "private",
+            "reserve": 3.0,
+            "n": 2,
+            "survival": 1.0,
+            "hungry_days": 7.0,
+            "spoiled": 335.5050437004288,
+            "recovered": 0,
+            "recovery_applicable": 0,
+            "recovery_days": null,
+            "replay": "a2bbf226c8c65158"
+          }
+        ],
+        "paired": [
+          {
+            "a": "individual / pool",
+            "b": "individual / private",
+            "metric": "survival",
+            "n": 2,
+            "difference": 0.0,
+            "low": 0.0,
+            "high": 0.0
+          },
+          {
+            "a": "individual / pool",
+            "b": "individual / private",
+            "metric": "hungry_days",
+            "n": 2,
+            "difference": 7.0,
+            "low": 4.0,
+            "high": 10.0
+          },
+          {
+            "a": "individual / pool",
+            "b": "individual / private",
+            "metric": "spoiled",
+            "n": 2,
+            "difference": 1.1062602691830534,
+            "low": 0.9179848624346505,
+            "high": 1.2945356759314564
+          }
+        ]
+      }
+    ],
+    "used_runs": 4,
+    "elapsed_seconds": 53.30288910865784,
+    "active_experiment": null,
+    "stop_reason": "Budget reached"
+  }
+}
